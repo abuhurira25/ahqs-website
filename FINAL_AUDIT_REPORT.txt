@@ -1,0 +1,39 @@
+AHQS FINAL CUSTOMER-JOURNEY AUDIT
+=================================
+
+OVERALL: READY AFTER THIS POST-DOMAIN UPDATE
+
+GREEN
+- 7 core pages present and internally linked.
+- Separate healthcare and laboratory consultation booking links preserved.
+- Payhip product CTAs preserved.
+- Phone, email and LinkedIn contact actions present.
+- One H1 per page.
+- Meta descriptions present on every page.
+- No missing internal HTML page targets detected.
+- No empty href links detected.
+- No insecure HTTP links detected.
+- PHI warning and Terms/Privacy acceptance present on inquiry form.
+- Legal independence wording retained.
+
+FIXED IN THIS PACKAGE
+1. Canonical URLs changed from the old GitHub Pages address to https://ahqshealthcare.com/.
+2. Open Graph and X/Twitter social metadata changed to the custom domain.
+3. Social preview changed from SVG to 1200x630 PNG for broader LinkedIn/WhatsApp/Facebook compatibility.
+4. robots.txt and sitemap.xml changed to the custom domain.
+5. Added Organization and WebSite structured data.
+6. Added a CNAME file to preserve the custom GitHub Pages domain.
+7. Added favicon.
+8. Added noindex to the 404 fallback page.
+
+YELLOW / BUSINESS IMPROVEMENT
+- The inquiry form intentionally uses mailto, so it depends on the visitor having an email app configured.
+  This is functional but weaker than a server-backed form. Recommended later: Formspree, Basin, or similar.
+- Public contact email is still the personal Hotmail address. Recommended next: configure Cloudflare Email Routing
+  for info@ahqshealthcare.com, then update the website.
+- Google Search Console and analytics are not yet configured.
+- Live social preview caches may need refreshing after upload.
+
+CUSTOMER-JOURNEY VERDICT
+The site is suitable to share after this package is uploaded. The highest-value next step is professional email
+followed by Google Search Console.
