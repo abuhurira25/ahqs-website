@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abuhurira25.github.io/ahqs-website/sitemap.xml

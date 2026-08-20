@@ -1,0 +1,16 @@
+AHQS FINAL LAUNCH PACKAGE
+
+Upload ALL files in this folder to the ROOT of the GitHub repository `ahqs-website`.
+When GitHub asks about files that already exist, replace/update them.
+
+After commit:
+1. Wait 1–3 minutes.
+2. Open https://abuhurira25.github.io/ahqs-website/
+3. Test all navigation and external CTA links.
+4. Test /robots.txt and /sitemap.xml in Safari.
+5. Next: connect a custom domain, then update canonical/social/sitemap URLs to the final domain.
+6. Submit sitemap.xml in Google Search Console after the final domain decision.
+
+IMPORTANT:
+The current metadata uses the existing GitHub Pages URL. When a custom domain is connected,
+update canonical, Open Graph URLs, robots.txt and sitemap.xml to that domain.

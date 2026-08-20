@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#0B2942"/>
+<circle cx="1030" cy="90" r="220" fill="#0E5D66" opacity=".35"/>
+<circle cx="1090" cy="590" r="260" fill="#0E5D66" opacity=".20"/>
+<text x="90" y="205" font-family="Arial, Helvetica, sans-serif" font-size="110" font-weight="700" fill="#FFFFFF">AHQS</text>
+<path d="M90 245 C260 205 390 215 545 165" fill="none" stroke="#C9A45C" stroke-width="10" stroke-linecap="round"/>
+<text x="90" y="330" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" fill="#FFFFFF">Healthcare Quality, Accreditation</text>
+<text x="90" y="390" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" fill="#FFFFFF">&amp; Laboratory Excellence</text>
+<text x="90" y="480" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#DCE8ED">Independent advisory support for healthcare organizations and laboratories</text>
+<text x="90" y="535" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#C9A45C">Accelerate Healthcare Quality Solutions</text>
+</svg>
