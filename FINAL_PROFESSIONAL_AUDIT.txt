@@ -1,0 +1,13 @@
+AHQS FINAL PROFESSIONAL WEBSITE AUDIT
+
+HTML pages checked: 19
+Official public email: info@ahqshealthcare.com
+Old personal/Hotmail email references: NONE
+Broken local links/assets: NONE
+FAQ page: PRESENT
+Pages missing FAQ navigation/reference: NONE
+Pages missing official info email reference: NONE
+Pages missing Google Analytics: NONE
+FAQ included in sitemap: YES
+Private forwarding destination published in HTML: NO
+Routing note: info@ahqshealthcare.com should forward to the designated private inbox through your domain email-routing service. The private destination is intentionally not exposed on the public website.
