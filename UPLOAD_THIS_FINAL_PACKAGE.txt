@@ -1,0 +1,10 @@
+AHQS FINAL CLEAN WEBSITE — ELI10 DEPLOYMENT
+
+1. Download and unzip AHQS-Website-FINAL-CLEAN-TESTED.zip.
+2. Open GitHub > abuhurira25/ahqs-website.
+3. Tap + > Upload files.
+4. Select ALL files INSIDE the unzipped folder. Do not upload the ZIP itself.
+5. Commit directly to main. Commit message: Deploy final audited AHQS website
+6. Open Actions and wait for pages build and deployment to show a green check.
+7. Open https://ahqshealthcare.com/ and refresh.
+8. Test: Home, Services, Book Consultation, Hospital Accreditation, JCI, ISO 15189, CAP, AABB, Clinical Audit, Patient Safety & Risk, Healthcare Excellence, Products, Contact.
