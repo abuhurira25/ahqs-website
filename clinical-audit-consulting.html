@@ -464,5 +464,18 @@ Book a Clinical Audit Consultation
 © 2026 Accelerate Healthcare Quality Solutions (AHQS).
 Independent healthcare quality, accreditation and organizational excellence consulting.
 <a href="faq.html">FAQ</a></footer>
-</body>
+<script>
+(function(){
+  function send(name,params){try{if(typeof gtag==='function')gtag('event',name,params||{});}catch(e){}}
+  document.addEventListener('click',function(e){
+    const a=e.target.closest('a'); if(!a) return;
+    const href=a.getAttribute('href')||''; const label=(a.textContent||'').trim().slice(0,120);
+    if(href.includes('calendar.app.google')) send('consultation_booking_click',{link_text:label,link_url:href});
+    else if(href.includes('payhip.com')) send('toolkit_purchase_click',{link_text:label,link_url:href});
+    else if(href.startsWith('mailto:')) send('email_contact_click',{link_text:label});
+    else if(href.startsWith('tel:')) send('phone_contact_click',{link_text:label});
+    else if(href.endsWith('.html') || href.includes('.html#')) send('internal_navigation_click',{link_text:label,link_url:href});
+  });
+})();
+</script></body>
 </html>
