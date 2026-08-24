@@ -1,0 +1,8 @@
+AHQS Phase 2 Typography Refinement Audit
+=========================================
+HTML pages checked: 27
+Links inspected: 738
+Teal eyebrow/kicker labels: 16px desktop, 14px mobile, weight 900
+Main H1/H2 hierarchy preserved; no redesign or content changes.
+Issues found: 0
+PASS — no missing internal link targets, duplicate IDs, or missing typography overrides found.
