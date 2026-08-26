@@ -20,3 +20,7 @@ This release keeps the existing static GitHub Pages architecture and adds the hi
 - No third-party form processor without explicit account credentials
 
 Upload all files in this folder to the root of the GitHub repository and replace matching files.
+
+
+## Toolkit pre-launch update
+Payhip checkout links have been removed. The Laboratory Inspection Readiness Toolkit is presented as Coming Soon with priority reservations via info@ahqshealthcare.com.

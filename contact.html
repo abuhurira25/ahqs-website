@@ -111,7 +111,7 @@ h2{font-size:40px;line-height:1.14;color:var(--navy);text-align:center;margin:10
 <section class="section soft"><div class="container faq"><div class="kicker">FREQUENT QUESTIONS</div><h2>Before you contact us</h2>
 <details><summary>Does AHQS provide accreditation or certification?</summary><p>No. AHQS provides independent quality-improvement and accreditation-readiness consulting. Accreditation and certification decisions remain with the applicable authorized organizations.</p></details>
 <details><summary>Can AHQS support laboratories virtually?</summary><p>Yes. Many coaching, document review, readiness, CAPA and quality-management activities can be performed virtually. On-site services can be discussed depending on scope and location.</p></details>
-<details><summary>Do we have to purchase the toolkit before consulting?</summary><p>No. The digital toolkit and consulting services are separate. The best starting point depends on your laboratory’s needs.</p></details>
+<details><summary>Do we need the toolkit before consulting?</summary><p>No. The toolkit and consulting services are separate. The toolkit is currently coming soon, while consultation support remains available now.</p></details>
 <details><summary>What happens during the free 20-minute discovery call?</summary><p>We focus on your main quality or readiness challenge, clarify what is happening and identify the most appropriate next step. It is not a generic sales presentation.</p></details>
 <details><summary>Can we send patient records for review?</summary><p>Please do not send PHI or unnecessary patient-identifiable information through the website or ordinary email. Any future engagement involving sensitive information should use an appropriate secure process.</p></details>
 </div></section>
@@ -129,7 +129,7 @@ h2{font-size:40px;line-height:1.14;color:var(--navy);text-align:center;margin:10
 <footer class="footer"><div class="container"><div class="footer-grid">
 <div><div class="logo" style="color:white"><span class="logomark">AHQS</span><span>AHQS<small>ACCELERATE HEALTHCARE QUALITY SOLUTIONS</small></span></div><p style="font-size:13px">Healthcare accreditation, clinical audit, patient safety, risk, laboratory quality and organizational excellence advisory support.</p></div>
 <div><h4>Company</h4><a href="about.html">About Us</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="faq.html">FAQ</a><a href="resources.html">Resources</a></div>
-<div><h4>Get Started</h4><a href="https://calendar.app.google/rpxEZoQH1sNFkM4f7" rel="noopener noreferrer" target="_blank">Free Healthcare Consultation</a><a href="https://payhip.com/b/3uOrK" rel="noopener noreferrer" target="_blank">Inspection Toolkit</a><a href="contact.html">Send an Inquiry</a></div>
+<div><h4>Get Started</h4><a href="https://calendar.app.google/rpxEZoQH1sNFkM4f7" rel="noopener noreferrer" target="_blank">Free Healthcare Consultation</a><a href="laboratory-inspection-readiness-toolkit.html" rel="noopener noreferrer" target="_blank">Inspection Toolkit</a><a href="contact.html">Send an Inquiry</a></div>
 <div><h4>Legal &amp; Trust</h4><a href="privacy.html">Privacy &amp; Accessibility</a><a href="terms.html">Terms &amp; Disclaimer</a><a href="terms.html">Independence &amp; Disclaimer</a><a href="privacy.html">Accessibility</a></div><div><h4>Connect</h4><a href="tel:+19843173711">+1 (984) 317-3711</a><a href="mailto:info@ahqshealthcare.com">Email AHQS</a><a href="https://www.linkedin.com/in/isam-abuhurira-07091639a" rel="noopener noreferrer" target="_blank">LinkedIn</a></div>
 </div><div class="copyright">© 2026 Accelerate Healthcare Quality Solutions (AHQS). Independent quality and accreditation-readiness consulting. Services do not constitute accreditation, certification, legal advice or a guarantee of accreditation outcomes.</div></div></footer>
 <script>
@@ -139,7 +139,6 @@ h2{font-size:40px;line-height:1.14;color:var(--navy);text-align:center;margin:10
     const a=e.target.closest('a'); if(!a) return;
     const href=a.getAttribute('href')||''; const label=(a.textContent||'').trim().slice(0,120);
     if(href.includes('calendar.app.google')) send('consultation_booking_click',{link_text:label,link_url:href});
-    else if(href.includes('payhip.com')) send('toolkit_purchase_click',{link_text:label,link_url:href});
     else if(href.startsWith('mailto:')) send('email_contact_click',{link_text:label});
     else if(href.startsWith('tel:')) send('phone_contact_click',{link_text:label});
     else if(href.endsWith('.html') || href.includes('.html#')) send('internal_navigation_click',{link_text:label,link_url:href});

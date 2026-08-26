@@ -6,7 +6,7 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);
 </script>
 <meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>How to Prepare for a CAP Laboratory Inspection | AHQS</title><meta content="Practical CAP inspection readiness guide for checklist review, competency, QC/PT, evidence, document control, mock inspection and corrective actions." name="description"/><meta content="index, follow, max-image-preview:large" name="robots"/>
-<link href="https://ahqshealthcare.com/cap-laboratory-inspection-readiness-guide.html" rel="canonical"/><link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://ahqshealthcare.com/cap-laboratory-inspection-readiness-guide.html" rel="canonical"/>
 <meta content="website" property="og:type"/><meta content="AHQS" property="og:site_name"/><meta content="How to Prepare for a CAP Laboratory Inspection | AHQS" property="og:title"/><meta content="Practical CAP inspection readiness guide for checklist review, competency, QC/PT, evidence, document control, mock inspection and corrective actions." property="og:description"/><meta content="https://ahqshealthcare.com/cap-laboratory-inspection-readiness-guide.html" property="og:url"/><meta content="https://ahqshealthcare.com/ahqs-social-preview.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="How to Prepare for a CAP Laboratory Inspection | AHQS" name="twitter:title"/><meta content="Practical CAP inspection readiness guide for checklist review, competency, QC/PT, evidence, document control, mock inspection and corrective actions." name="twitter:description"/><meta content="https://ahqshealthcare.com/ahqs-social-preview.png" name="twitter:image"/>
 <style>
 :root{--navy:#071f3b;--navy2:#0c3560;--teal:#087f83;--gold:#d8a72b;--gold2:#f0cb67;--ink:#173047;--muted:#667789;--bg:#f5f8fa;--line:#dce6eb;--white:#fff;--shadow:0 26px 70px rgba(7,31,59,.13)}
@@ -87,7 +87,6 @@ h2{font-size:40px;line-height:1.14;color:var(--navy);text-align:center;margin:10
     const a=e.target.closest('a'); if(!a) return;
     const href=a.getAttribute('href')||''; const label=(a.textContent||'').trim().slice(0,120);
     if(href.includes('calendar.app.google')) send('consultation_booking_click',{link_text:label,link_url:href});
-    else if(href.includes('payhip.com')) send('toolkit_purchase_click',{link_text:label,link_url:href});
     else if(href.startsWith('mailto:')) send('email_contact_click',{link_text:label});
     else if(href.startsWith('tel:')) send('phone_contact_click',{link_text:label});
     else if(href.endsWith('.html') || href.includes('.html#')) send('internal_navigation_click',{link_text:label,link_url:href});

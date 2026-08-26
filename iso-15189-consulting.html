@@ -117,7 +117,7 @@ footer a{color:#fff}
   "name":"Accelerate Healthcare Quality Solutions",
   "alternateName":"AHQS",
   "url":"https://ahqshealthcare.com/",
-  "areaServed":["United Arab Emirates","Saudi Arabia","Qatar","Oman","Bahrain","GCC"],
+  "areaServed":"Worldwide",
   "serviceType":[
     "ISO 15189 Consulting",
     "Laboratory Accreditation Consulting",
@@ -284,15 +284,12 @@ footer a{color:#fff}
 </section>
 <section class="section soft">
 <div class="container">
-<h2>Support for UAE and GCC laboratories</h2>
+<h2>Support for hospitals and laboratories worldwide</h2>
 <p>
-      AHQS supports healthcare and laboratory organizations across the UAE and GCC that require
-      independent accreditation expertise, additional quality resources or structured readiness
-      support.
+      AHQS supports hospitals, clinical laboratories, transfusion services and healthcare organizations worldwide that require independent accreditation expertise, additional quality resources or structured readiness support.
     </p>
 <p>
-      Engagements can be focused on a single high-risk area, a complete laboratory gap assessment,
-      a mock accreditation survey or ongoing post-accreditation quality support.
+      Engagements can focus on a single high-risk area, a complete gap assessment, a mock accreditation survey, corrective-action support, or ongoing quality improvement and post-accreditation support.
     </p>
 </div>
 </section>
@@ -350,7 +347,6 @@ footer a{color:#fff}
     const a=e.target.closest('a'); if(!a) return;
     const href=a.getAttribute('href')||''; const label=(a.textContent||'').trim().slice(0,120);
     if(href.includes('calendar.app.google')) send('consultation_booking_click',{link_text:label,link_url:href});
-    else if(href.includes('payhip.com')) send('toolkit_purchase_click',{link_text:label,link_url:href});
     else if(href.startsWith('mailto:')) send('email_contact_click',{link_text:label});
     else if(href.startsWith('tel:')) send('phone_contact_click',{link_text:label});
     else if(href.endsWith('.html') || href.includes('.html#')) send('internal_navigation_click',{link_text:label,link_url:href});
