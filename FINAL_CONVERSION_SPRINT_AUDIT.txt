@@ -1,0 +1,40 @@
+AHQS CONVERSION SPRINT — FINAL AUDIT
+Date: 2026-08-29
+
+PURPOSE
+Improve near-term customer acquisition by focusing the website on clinical
+laboratory readiness and a complimentary 20-minute introductory triage.
+
+MATERIAL CHANGES
+- Homepage messaging now leads with CAP, ISO 15189, and AABB laboratory needs.
+- Added laboratory-readiness-triage.html as the focused campaign landing page.
+- Standardized all booking links to the existing shared Google calendar:
+  https://calendar.app.google/rpxEZoQH1sNFkM4f7
+- Contact page now explains the specific outcome of the 20-minute call.
+- Updated laboratory-service CTAs to point to the focused landing page.
+- Added professional email access to secondary service-page footers.
+- Added CNAME, robots.txt, and a complete sitemap.xml for GitHub Pages.
+
+AUTOMATED STATIC VALIDATION
+- HTML pages checked: 28
+- Exactly one title, description, canonical URL, and H1 on every indexable page
+- All JSON-LD blocks parse successfully
+- No duplicate HTML IDs detected
+- All local href/src targets resolve
+- All 27 indexable pages are present in sitemap.xml
+- All consultation URLs use the one approved shared calendar
+- No Payhip checkout links, deprecated lab-calendar URL, or V2 marker detected
+- Professional email present on every indexable page
+
+DEPLOYMENT BLOCKER
+The ChatGPT GitHub connector is not authenticated (USER_NOT_LOGGED_IN). The
+validated package is ready for manual upload or connector-based publishing once
+the GitHub authorization is restored. This is an account-connection blocker,
+not a source-code or repository-content failure.
+
+POST-DEPLOYMENT CHECKS
+1. Confirm https://ahqshealthcare.com/ loads the revised homepage.
+2. Confirm /laboratory-readiness-triage.html returns HTTP 200.
+3. Test the shared calendar from desktop and mobile.
+4. Confirm the custom domain remains active in GitHub Pages.
+5. Submit sitemap.xml in Google Search Console if it is not already submitted.
