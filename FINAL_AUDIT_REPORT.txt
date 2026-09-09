@@ -1,39 +1,89 @@
-AHQS FINAL CUSTOMER-JOURNEY AUDIT
-=================================
+AHQS WEBSITE FINAL AUDIT — ACCESSIBILITY, CONVERSION, SEO & TYPOGRAPHY
+=====================================================================
+Release: Final Accessibility / CRO / Typography Tested
+Production domain: https://ahqshealthcare.com/
 
-OVERALL: READY AFTER THIS POST-DOMAIN UPDATE
+AUTOMATED VALIDATION RESULTS
+----------------------------
+HTML pages checked: 27
+Links inspected: 1,200
+Local asset references inspected: 54
+JSON-LD blocks parsed: 59
+FAQPage schema pages: 13
+FAQ questions mirrored in schema: 57
+External Google Calendar booking links: 2, both on contact.html only
+Structural/link/schema issues found: 0
 
-GREEN
-- 7 core pages present and internally linked.
-- Separate healthcare and laboratory consultation booking links preserved.
-- Payhip product CTAs preserved.
-- Phone, email and LinkedIn contact actions present.
-- One H1 per page.
-- Meta descriptions present on every page.
-- No missing internal HTML page targets detected.
-- No empty href links detected.
-- No insecure HTTP links detected.
-- PHI warning and Terms/Privacy acceptance present on inquiry form.
-- Legal independence wording retained.
+IMPLEMENTED FIXES
+-----------------
+1. ACCESSIBLE BRAND / HEADER
+- Removed duplicated AHQS + AHQS brand wording from the accessible header/footer name.
+- Unified brand home link uses a single accessible label:
+  “AHQS — Accelerate Healthcare Quality Solutions, home”.
+- The visible AHQS mark and tagline are decorative to assistive technology, avoiding duplicate announcement.
+- Unified header across all templates, including older service-page templates.
+- Replaced remaining legacy “AH” mark with AHQS.
+- Added responsive mobile navigation.
 
-FIXED IN THIS PACKAGE
-1. Canonical URLs changed from the old GitHub Pages address to https://ahqshealthcare.com/.
-2. Open Graph and X/Twitter social metadata changed to the custom domain.
-3. Social preview changed from SVG to 1200x630 PNG for broader LinkedIn/WhatsApp/Facebook compatibility.
-4. robots.txt and sitemap.xml changed to the custom domain.
-5. Added Organization and WebSite structured data.
-6. Added a CNAME file to preserve the custom GitHub Pages domain.
-7. Added favicon.
-8. Added noindex to the 404 fallback page.
+2. FOOTER / LEGAL ROUTING
+- Privacy Policy -> privacy.html
+- Accessibility Statement -> privacy.html#accessibility
+- Terms of Service -> terms.html
+- Independence Disclaimer -> terms.html#independence
+- Added verified anchor IDs for Accessibility and Independence sections.
+- Unified footer across all 27 pages, including the 404 page.
 
-YELLOW / BUSINESS IMPROVEMENT
-- The inquiry form intentionally uses mailto, so it depends on the visitor having an email app configured.
-  This is functional but weaker than a server-backed form. Recommended later: Formspree, Basin, or similar.
-- Public contact email is still the personal Hotmail address. Recommended next: configure Cloudflare Email Routing
-  for info@ahqshealthcare.com, then update the website.
-- Google Search Console and analytics are not yet configured.
-- Live social preview caches may need refreshing after upload.
+3. CONSULTATION CTA ROUTING & ANALYTICS
+- Sitewide booking CTAs route through contact.html#book-consultation.
+- Only contact.html contains the two live external Google Calendar choices.
+- Added consultation_start_click tracking for owned-site booking starts.
+- Existing consultation_booking_click tracking remains for actual external calendar clicks.
+- Reduced repetitive homepage booking CTAs and gave remaining calls-to-action distinct roles.
 
-CUSTOMER-JOURNEY VERDICT
-The site is suitable to share after this package is uploaded. The highest-value next step is professional email
-followed by Google Search Console.
+4. STRUCTURED DATA
+- Added one consistent ProfessionalService schema block to every indexable page.
+- ProfessionalService states worldwide support and current AHQS contact details.
+- Regenerated FAQPage schema from visible FAQ content so schema mirrors page text.
+- Consolidated duplicate homepage Organization schema into one complete record.
+- JSON-LD validated as parseable across the release.
+
+5. TRUST / CONVERSION EXPERIENCE
+- Strengthened the homepage AHQS consulting introduction around healthcare quality, clinical governance, clinical risk, clinical audit/review, patient safety, accreditation, transfusion medicine and performance improvement.
+- Worldwide positioning retained for hospitals, laboratories, transfusion services and healthcare organizations.
+- Added transparent commercial next step: paid engagements are custom-scoped and begin only after a written proposal, timeline and professional fee are provided for approval.
+- No testimonials, client names or case-result claims were fabricated. Trust improvements rely on transparent process and experience-led positioning.
+- Toolkit remains Coming Soon and links to its dedicated page / priority reservation path; no payment link is active.
+
+6. PROFESSIONAL TYPOGRAPHY / VISUAL HIERARCHY
+- Implemented a modern system font stack for consistent rendering without an external font dependency.
+- Responsive H1 hierarchy using clamp sizing, tighter professional letter spacing and improved line height.
+- Responsive H2/H3 hierarchy with balanced headings.
+- Refined eyebrow/kicker labels, lead text, body copy, cards, buttons, article text and footer typography.
+- Added readable article line length and increased paragraph line height.
+- Improved mobile heading scale, tagline sizing and layout behavior.
+- Added visible keyboard focus styling.
+- Corrected inline punctuation spacing between adjacent service links.
+
+7. GITHUB PAGES / SEO SUPPORT FILES
+- CNAME present: ahqshealthcare.com
+- robots.txt present with sitemap reference
+- sitemap.xml includes 26 indexable HTML URLs (404 excluded)
+- .nojekyll present
+- favicon.svg present
+
+LEGACY / PAYMENT CHECKS
+-----------------------
+Payhip references: 0
+Toolkit V2 references: 0
+Old duplicated AHQSAHQS... string: 0
+Legacy standalone “AH” header mark: 0
+Broken internal page targets: 0
+Broken checked anchors: 0
+Duplicate HTML IDs: 0
+Malformed JSON-LD: 0
+
+DEPLOYMENT
+----------
+Upload ALL files in this folder to the root of the GitHub repository, replacing matching files, then commit to `main`.
+Recommended commit message:
+Deploy AHQS accessibility conversion and typography audit fixes

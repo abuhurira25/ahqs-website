@@ -1,0 +1,12 @@
+AHQS SEO INDEXING CLEAN AUDIT
+
+HTML pages checked: 27
+Homepage links normalized from index.html to /: 110
+index.html internal links remaining: 0
+Canonical URLs checked: 26
+Sitemap URLs: 26
+Sitemap and canonical URL set match: True
+robots.txt sitemap directive present: True
+Issues: 0
+
+PASS: canonical, sitemap, and internal-home-link checks passed.
