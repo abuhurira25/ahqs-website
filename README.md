@@ -20,3 +20,11 @@ This release builds on the accessibility, trust, SEO, typography and guide work 
 Upload every file in this folder to the root of the GitHub Pages repository and replace matching files.
 
 Recommended commit: `Deploy AHQS premium interactive conversion experience`
+
+
+## Final brand refinement
+- Homepage opening statement changed to a result-led AHQS positioning line.
+- Moving heading shimmer removed; interactive sheen remains on appropriate controls/pills.
+- Resources renamed visibly to **Readiness Hub**; the SEO-safe URL remains `resources.html`.
+- Resource destination branded as **AHQS Readiness & Insights Hub**.
+- Hero opening labels standardized in size across homepage and internal page heroes.

@@ -398,7 +398,67 @@ body{font-size:16px;line-height:1.68;text-rendering:optimizeLegibility;-webkit-f
 @media(max-width:620px){.section>.container>.kicker,.section>.container>.eyebrow{font-size:clamp(1.58rem,8vw,2.05rem)!important;text-align:left!important;margin-left:0!important}.section>.container>.kicker+h2,.section>.container>.eyebrow+h2,.section>.container>.kicker+h1,.section>.container>.eyebrow+h1{text-align:left!important;margin-left:0!important;font-size:clamp(1.23rem,5.4vw,1.48rem)!important}.section>.container>.kicker+h2+.lead,.section>.container>.eyebrow+h2+.lead,.section>.container>.kicker+h1+p,.section>.container>.eyebrow+h1+p{text-align:left!important;margin-left:0!important;font-size:1rem!important}.pagehero .eyebrow{font-size:clamp(1.55rem,8vw,2rem)!important}.pagehero .eyebrow+h1{font-size:clamp(1.27rem,5.8vw,1.52rem)!important}.ahqs-nav-options{grid-template-columns:1fr}.ahqs-priority-btn{min-height:58px;text-align:left}.pill,.service-pill-link{min-height:46px!important;padding:11px 18px!important;font-size:.97rem!important}.ahqs-navigator{padding:20px 16px}.ahqs-conversion-dock{gap:9px;padding:11px 10px 11px 13px}.ahqs-dock-copy span{display:none}.ahqs-dock-cta{font-size:.75rem}.article>section>h2,.article>h2{font-size:1.35rem!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.section>.container>.kicker,.section>.container>.eyebrow,.pagehero .eyebrow{animation:none!important}.ahqs-reveal-ready{opacity:1!important;transform:none!important;transition:none!important}.ahqs-conversion-dock,.btn,.card,.service-card,.proof-item,.trust-principle,.outcome-card,.resource-card{transition:none!important}}
 </style>
-</head><body><div class="ahqs-topbar"><div class="ahqs-shell"><span>Independent Healthcare Quality, Accreditation, Clinical Governance &amp; Laboratory Excellence Support — Worldwide</span><span class="ahqs-contact-mini"><a href="tel:+19843173711">+1 (984) 317-3711</a>  •  <a href="mailto:info@ahqshealthcare.com">info@ahqshealthcare.com</a></span></div></div><header class="ahqs-site-header"><div class="ahqs-shell ahqs-header-inner"><a aria-label="AHQS — Accelerate Healthcare Quality Solutions, home" class="ahqs-brand-home" href="/"><span aria-hidden="true" class="ahqs-mark">AHQS</span><span aria-hidden="true" class="ahqs-brand-tagline">Accelerate Healthcare Quality Solutions</span></a><nav aria-label="Primary navigation" class="ahqs-primary-nav"><a href="/">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="resources.html">Resources</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="ahqs-nav-cta" href="contact.html#book-consultation">Free 20-Min Consultation</a></nav><details class="ahqs-mobile-menu"><summary aria-label="Open site navigation">Menu</summary><div class="ahqs-mobile-links"><a href="/">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="resources.html">Resources</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="ahqs-nav-cta" href="contact.html#book-consultation">Free 20-Min Consultation</a></div></details></div></header>
+
+<style id="ahqs-final-brand-refinement">
+/* Final AHQS brand refinement: prominent but calm hero labels; no moving heading shimmer. */
+.hero .hero-grid > div > .eyebrow,
+.pagehero .eyebrow{
+  font-size:clamp(1.28rem,1.85vw,1.72rem)!important;
+  line-height:1.22!important;
+  font-weight:900!important;
+  letter-spacing:.045em!important;
+  text-transform:uppercase!important;
+  animation:none!important;
+  background:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
+  -webkit-text-fill-color:currentColor!important;
+  text-wrap:balance;
+}
+.hero .hero-grid > div > .eyebrow{
+  display:block!important;
+  max-width:660px;
+  color:var(--ahqs-teal,#087f83)!important;
+  margin:0 0 1rem!important;
+}
+.pagehero .eyebrow{
+  color:var(--gold2,#f0cb67)!important;
+  margin:0 0 .8rem!important;
+}
+/* Preserve the large section-first hierarchy while removing continuous animation. */
+.section>.container>.kicker,
+.section>.container>.eyebrow{
+  animation:none!important;
+  background-position:42% 50%!important;
+}
+/* The knowledge hub is a signature destination, so give its nav link quiet prominence. */
+.ahqs-primary-nav a[href="resources.html"]{
+  color:var(--ahqs-teal,#087f83)!important;
+  font-weight:900!important;
+  position:relative;
+}
+.ahqs-primary-nav a[href="resources.html"]::after{
+  content:"";
+  position:absolute;
+  left:10%; right:10%; bottom:-7px;
+  height:2px; border-radius:999px;
+  background:linear-gradient(90deg,#087f83,#d7a72d);
+  opacity:.72;
+}
+.ahqs-mobile-links a[href="resources.html"]{color:var(--ahqs-teal,#087f83)!important;font-weight:900!important}
+@media(max-width:620px){
+  .hero .hero-grid > div > .eyebrow,.pagehero .eyebrow{
+    font-size:clamp(1.08rem,5.1vw,1.34rem)!important;
+    line-height:1.28!important;
+    letter-spacing:.035em!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .hero .eyebrow,.pagehero .eyebrow,.section>.container>.kicker,.section>.container>.eyebrow{animation:none!important}
+}
+</style>
+
+</head><body><div class="ahqs-topbar"><div class="ahqs-shell"><span>Independent Healthcare Quality, Accreditation, Clinical Governance &amp; Laboratory Excellence Support — Worldwide</span><span class="ahqs-contact-mini"><a href="tel:+19843173711">+1 (984) 317-3711</a>  •  <a href="mailto:info@ahqshealthcare.com">info@ahqshealthcare.com</a></span></div></div><header class="ahqs-site-header"><div class="ahqs-shell ahqs-header-inner"><a aria-label="AHQS — Accelerate Healthcare Quality Solutions, home" class="ahqs-brand-home" href="/"><span aria-hidden="true" class="ahqs-mark">AHQS</span><span aria-hidden="true" class="ahqs-brand-tagline">Accelerate Healthcare Quality Solutions</span></a><nav aria-label="Primary navigation" class="ahqs-primary-nav"><a href="/">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="resources.html">Readiness Hub</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="ahqs-nav-cta" href="contact.html#book-consultation">Free 20-Min Consultation</a></nav><details class="ahqs-mobile-menu"><summary aria-label="Open site navigation">Menu</summary><div class="ahqs-mobile-links"><a href="/">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="resources.html">Readiness Hub</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="ahqs-nav-cta" href="contact.html#book-consultation">Free 20-Min Consultation</a></div></details></div></header>
 <section class="pagehero"><div class="container"><div class="eyebrow">SERVICES</div><h1>Healthcare Quality &amp; Laboratory Accreditation Consulting Services</h1><p>AHQS supports hospitals, clinical laboratories and healthcare organizations with accreditation, reaccreditation, clinical audit, quality-system improvement and excellence programs designed to strengthen readiness, evidence, governance and sustainable performance.</p></div></section>
 <section style="background:#fff;border-top:1px solid #dce6eb;border-bottom:1px solid #dce6eb">
 <div class="container" style="padding-top:20px;padding-bottom:20px;text-align:center">
@@ -453,7 +513,7 @@ body{font-size:16px;line-height:1.68;text-rendering:optimizeLegibility;-webkit-f
 <a class="btn btn-navy" href="contact.html#book-consultation">🔬 Laboratory Quality Consultation</a>
 </div><div class="engagement-note"><strong>Clear commercial next step:</strong> the complimentary 20-minute consultation is used to clarify need and fit. Any paid engagement begins only after you receive and approve a written scope, timeline and professional fee proposal.</div></div></section>
 <section class="section soft" id="service-resources"><div class="container"><div class="kicker">LEARN BEFORE YOU ENGAGE</div><h2>Practical accreditation and quality resources</h2><p class="lead">Use AHQS guides to understand common readiness gaps, then engage us when you need an independent assessment or implementation support.</p><div class="cta-row" style="justify-content:center"><a class="btn btn-navy" href="resources.html">Browse Free Resources</a><a class="btn btn-outline" href="laboratory-inspection-readiness-toolkit.html">Toolkit — Coming Soon</a></div></div></section><section aria-label="AHQS official brand" class="ahqs-brand-signature"><div class="container"><div class="brand-card"><img alt="AHQS — Accelerate Healthcare Quality Solutions official logo" decoding="async" loading="lazy" src="ahqs-official-logo-hd.png" width="1600"/><p>Independent healthcare quality, accreditation readiness and laboratory excellence support.</p></div></div></section>
-<aside aria-label="Consultation shortcut" class="ahqs-conversion-dock"><div class="ahqs-dock-copy"><strong>Need an independent readiness view?</strong><span>Use 20 minutes to clarify your highest-priority gap.</span></div><a class="ahqs-dock-cta" href="contact.html#book-consultation">Free Consultation</a><button aria-label="Dismiss consultation shortcut" class="ahqs-dock-close" type="button">×</button></aside><footer aria-label="Site footer" class="ahqs-site-footer"><div class="ahqs-shell"><div class="ahqs-footer-grid"><div><a aria-label="AHQS — Accelerate Healthcare Quality Solutions, home" class="ahqs-brand-home" href="/"><span aria-hidden="true" class="ahqs-mark">AHQS</span><span aria-hidden="true" class="ahqs-brand-tagline">Accelerate Healthcare Quality Solutions</span></a><p class="ahqs-footer-intro">Independent healthcare quality, accreditation readiness, clinical governance, clinical risk, clinical audit, patient safety and laboratory excellence consulting for hospitals and laboratories worldwide.</p></div><div><h4>Company</h4><a href="about.html">About Us</a><a href="experience-outcomes.html">Experience &amp; Outcomes</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="resources.html">Resources</a><a href="faq.html">FAQ</a></div><div><h4>Get Started</h4><a href="contact.html#book-consultation">Start a Consultation</a><a href="laboratory-inspection-readiness-toolkit.html">Inspection Readiness Toolkit</a><a href="contact.html">Send an Inquiry</a></div><div><h4>Legal &amp; Trust</h4><a href="privacy.html">Privacy Policy</a><a href="privacy.html#accessibility">Accessibility Statement</a><a href="terms.html">Terms of Service</a><a href="terms.html#independence">Independence Disclaimer</a></div><div><h4>Connect</h4><a href="tel:+19843173711">+1 (984) 317-3711</a><a href="mailto:info@ahqshealthcare.com">info@ahqshealthcare.com</a><a href="https://www.linkedin.com/in/isam-abuhurira-07091639a" rel="noopener noreferrer" target="_blank">LinkedIn</a></div></div><div class="ahqs-copyright">© 2026 Accelerate Healthcare Quality Solutions (AHQS). Independent quality and accreditation-readiness consulting. Services do not constitute accreditation, certification, legal advice or a guarantee of accreditation outcomes.</div></div></footer><script>
+<aside aria-label="Consultation shortcut" class="ahqs-conversion-dock"><div class="ahqs-dock-copy"><strong>Need an independent readiness view?</strong><span>Use 20 minutes to clarify your highest-priority gap.</span></div><a class="ahqs-dock-cta" href="contact.html#book-consultation">Free Consultation</a><button aria-label="Dismiss consultation shortcut" class="ahqs-dock-close" type="button">×</button></aside><footer aria-label="Site footer" class="ahqs-site-footer"><div class="ahqs-shell"><div class="ahqs-footer-grid"><div><a aria-label="AHQS — Accelerate Healthcare Quality Solutions, home" class="ahqs-brand-home" href="/"><span aria-hidden="true" class="ahqs-mark">AHQS</span><span aria-hidden="true" class="ahqs-brand-tagline">Accelerate Healthcare Quality Solutions</span></a><p class="ahqs-footer-intro">Independent healthcare quality, accreditation readiness, clinical governance, clinical risk, clinical audit, patient safety and laboratory excellence consulting for hospitals and laboratories worldwide.</p></div><div><h4>Company</h4><a href="about.html">About Us</a><a href="experience-outcomes.html">Experience &amp; Outcomes</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="resources.html">Readiness Hub</a><a href="faq.html">FAQ</a></div><div><h4>Get Started</h4><a href="contact.html#book-consultation">Start a Consultation</a><a href="laboratory-inspection-readiness-toolkit.html">Inspection Readiness Toolkit</a><a href="contact.html">Send an Inquiry</a></div><div><h4>Legal &amp; Trust</h4><a href="privacy.html">Privacy Policy</a><a href="privacy.html#accessibility">Accessibility Statement</a><a href="terms.html">Terms of Service</a><a href="terms.html#independence">Independence Disclaimer</a></div><div><h4>Connect</h4><a href="tel:+19843173711">+1 (984) 317-3711</a><a href="mailto:info@ahqshealthcare.com">info@ahqshealthcare.com</a><a href="https://www.linkedin.com/in/isam-abuhurira-07091639a" rel="noopener noreferrer" target="_blank">LinkedIn</a></div></div><div class="ahqs-copyright">© 2026 Accelerate Healthcare Quality Solutions (AHQS). Independent quality and accreditation-readiness consulting. Services do not constitute accreditation, certification, legal advice or a guarantee of accreditation outcomes.</div></div></footer><script>
 (function(){
   function send(name,params){try{if(typeof gtag==='function')gtag('event',name,params||{});}catch(e){}}
   document.addEventListener('click',function(e){

@@ -1,0 +1,16 @@
+AHQS FINAL BRAND + READINESS HUB AUDIT
+======================================
+HTML pages checked: 28
+New homepage opening statement: True
+Old generic opening removed: True
+Readiness Hub nav/footer labels: 85
+Old Resources nav labels remaining: 0
+Resource hub branded: True
+Resource hub H1 updated: True
+Heading-motion override present site-wide: True
+Payhip refs: 0
+Toolkit V2 refs: 0
+Missing local targets: 0
+Issues: 0
+
+RESULT: PASS — no structural issues found by static audit.
