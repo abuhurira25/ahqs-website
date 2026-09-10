@@ -1,31 +1,22 @@
-# AHQS Website — Final Accessibility, Conversion & Typography Release
+# AHQS Premium Interactive Conversion Release
 
-Production-ready static website for https://ahqshealthcare.com/.
+This release builds on the accessibility, trust, SEO, typography and guide work already completed.
+
+## Added in this release
+- Branded site-wide hierarchy: premium accent heading → supporting subheading → readable body copy.
+- Larger interactive expertise pills with restrained shine/lift feedback.
+- Refined card/button/navigation micro-interactions with reduced-motion support.
+- Interactive “Find Your Best Starting Point” service navigator on Home and Services.
+- Representative accreditation delivery pathways for ISO 15189, CAP and JCI, with confidentiality and independence safeguards.
+- New dedicated `experience-outcomes.html` trust page.
+- Clear “20 minutes, a clearer next step” consultation journey.
+- Discreet, dismissible consultation shortcut after meaningful scroll depth.
+- Guide reading progress indicator.
+- Six resource guides expanded with practical Verify / Evidence to sample / Consultant prompt blocks for every major guide section.
+- Mid-guide consultation prompts designed to convert uncertainty into a focused discussion without aggressive sales language.
+- Existing booking routing, structured data, analytics, canonical URLs, accessibility, legal disclaimers, global positioning and toolkit prelaunch are preserved.
 
 ## Deployment
-Upload all files in this folder to the root of the `ahqs-website` GitHub repository and commit to `main`.
+Upload every file in this folder to the root of the GitHub Pages repository and replace matching files.
 
-Recommended commit message:
-`Deploy AHQS accessibility conversion and typography audit fixes`
-
-## Key release changes
-- Unified accessible AHQS header and footer on every page.
-- Removed duplicated/run-on brand announcement in the accessibility tree.
-- Added responsive mobile navigation.
-- Standardized legal footer links and anchored accessibility/independence sections.
-- Routed sitewide consultation CTAs through `contact.html#book-consultation`; Google Calendar links now live only on the booking hub.
-- Added/normalized ProfessionalService and FAQPage structured data where visible FAQ content exists.
-- Strengthened homepage AHQS consulting positioning for worldwide hospitals and laboratories.
-- Added transparent engagement/pricing-next-step language without inventing fees.
-- Refined headings, subheadings, body text, cards, buttons and article typography for a smoother professional hierarchy.
-- Preserved Toolkit Coming Soon / priority reservation state; no Payhip checkout is active.
-- Added CNAME, robots.txt, sitemap.xml, .nojekyll and favicon.svg for a self-contained GitHub Pages release.
-
-See `FINAL_AUDIT_REPORT.txt` for automated validation results.
-
-
-## Trust & Case-Experience Update
-- Added experience-backed accreditation proof points to homepage.
-- Added representative ISO 15189, CAP and JCI accreditation experience without disclosing confidential client identities.
-- Strengthened About Us, leadership, confidentiality and professional-trust messaging.
-- Added approved Founder & Principal Consultant portrait to About Us.
+Recommended commit: `Deploy AHQS premium interactive conversion experience`

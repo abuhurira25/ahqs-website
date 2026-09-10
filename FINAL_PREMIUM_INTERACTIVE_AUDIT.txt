@@ -1,0 +1,60 @@
+AHQS PREMIUM INTERACTIVE CONVERSION RELEASE — FINAL AUDIT
+Date: 2026-09-09
+
+SCOPE
+- Site-wide premium visual hierarchy and micro-interaction layer
+- Conversion-focused service discovery and consultation path
+- Trust / representative accreditation experience expansion
+- Resource-guide enrichment and interactivity
+- New Experience & Outcomes page
+- Existing accessibility, analytics, SEO, booking, legal and prelaunch safeguards preserved
+
+CONTENT / UX ENHANCEMENTS
+- Accent section headings now lead the hierarchy, followed by smaller supporting subheadings and readable body text.
+- Page-hero labels refined while keeping long homepage hero messaging restrained.
+- Expertise oval links enlarged with subtle shine/lift interaction.
+- Existing service-card structure preserved; premium hover/focus feedback added without changing the core layout.
+- Buttons and navigation receive restrained interactive feedback.
+- Interactive “Find Your Best Starting Point” navigator added to Home and Services.
+- Representative ISO 15189, CAP and JCI delivery pathways added with confidentiality and independence wording.
+- Dedicated experience-outcomes.html created and linked from Home, About and footers.
+- “20 minutes, a clearer next step” consultation pathway added to Home; consultation expectations strengthened on Contact.
+- Discreet dismissible consultation dock appears only after meaningful scroll depth and hides near the footer.
+- Resource pages receive a reading-progress indicator.
+- Six major resource guides expanded so each of 10 core topics includes: Verify / Evidence to sample / Consultant prompt.
+- Mid-guide conversion prompt added after the fifth topic; existing 5-minute readiness self-check retained.
+- Reduced-motion support included for users who prefer less animation.
+
+TECHNICAL VALIDATION
+- HTML pages: 28 (27 indexable + 404)
+- Sitemap URLs: 27
+- Internal/external link and asset references checked: 1,457
+- JSON-LD blocks parsed successfully: 60
+- Inline JavaScript blocks syntax-checked with Node: 91
+- JavaScript syntax errors: 0
+- Duplicate IDs: 0
+- Missing local targets/assets: 0
+- Indexable pages missing canonical: 0
+- Canonicals missing from sitemap: 0
+- Indexable pages missing GA4 G-43S6EN0KMS: 0
+- External booking-calendar links: 2, both retained only on contact.html
+- Payhip references: 0
+- Toolkit V2 references: 0
+- Private forwarding Gmail references: 0
+- Legacy personal Hotmail references: 0
+- Legacy internal index.html homepage links: 0
+- Guide section enrichment blocks: 60 total (10 × 6 guides)
+- Mid-guide consultation prompts: 6
+- Existing interactive guide self-checks: 6
+
+POSITIONING / CLAIM SAFEGUARDS
+- Representative experience is framed as professional delivery history and accreditation-journey support.
+- No fabricated client names, testimonials, percentages or numerical performance outcomes were added.
+- Accreditation decisions remain explicitly with the relevant accrediting organization.
+- AHQS remains positioned as an independent consultancy, not an accrediting body.
+- Client identities/engagement details remain confidential unless disclosure is authorized.
+
+DEPLOYMENT
+Upload every file in this folder to the root of the GitHub Pages repository and replace matching files.
+Recommended commit message:
+Deploy AHQS premium interactive conversion experience
