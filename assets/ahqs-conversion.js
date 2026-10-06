@@ -27,33 +27,75 @@
       }
       if (!email) { alert('Please enter your email address.'); return; }
 
-      // Construct mailto link for static site
-      var subject = encodeURIComponent('Resource Request: ' + resource);
-      var body = encodeURIComponent(
-        'Name: ' + name + '\n' +
-        'Email: ' + email + '\n' +
-        'Organization Type: ' + orgType + '\n' +
-        'Resource Requested: ' + resource + '\n\n' +
-        'Please send the requested resource. I consent to receiving emails from AHQS.'
-      );
-      var mailto = 'mailto:info@ahqshealthcare.com?subject=' + subject + '&body=' + body;
+      // Submit to Formspree
+      var formData = new FormData();
+      formData.append('name', name);
+      formData.append('email', email);
+      formData.append('organization_type', orgType);
+      formData.append('resource_requested', resource);
+      formData.append('_subject', 'Resource Request: ' + resource);
+      formData.append('source_page', window.location.pathname);
 
-      // Show success message
-      var successMsg = form.parentElement.querySelector('.ahqs-lead-success');
-      if (successMsg) {
-        successMsg.classList.add('ahqs-show');
-        successMsg.querySelector('span').textContent = email;
-      }
+      // Use Formspree API endpoint
+      var formspreeEndpoint = 'https://formspree.io/f/placeholder';
+      // The endpoint will be set from a data attribute or config
+      var endpoint = form.getAttribute('data-formspree-endpoint') || formspreeEndpoint;
 
-      // Track event
-      send('lead_form_submitted', {
-        resource_name: resource,
-        org_type: orgType,
-        link_text: name
+      // Show loading state
+      var submitBtn = form.querySelector('.btn[type="submit"]');
+      if (submitBtn) { submitBtn.textContent = 'Sending...'; submitBtn.disabled = true; }
+
+      fetch(endpoint, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function(response) {
+        if (response.ok) {
+          // Show success message
+          var successMsg = form.parentElement.querySelector('.ahqs-lead-success');
+          if (successMsg) {
+            successMsg.classList.add('ahqs-show');
+            successMsg.querySelector('span').textContent = email;
+          }
+          // Reset form
+          form.reset();
+          send('lead_form_submitted', {
+            resource_name: resource,
+            org_type: orgType,
+            link_text: name
+          });
+        } else {
+          throw new Error('Form submission failed');
+        }
+      })
+      .catch(function(err) {
+        // Fallback to mailto if Formspree fails
+        var subject = encodeURIComponent('Resource Request: ' + resource);
+        var body = encodeURIComponent(
+          'Name: ' + name + '\n' +
+          'Email: ' + email + '\n' +
+          'Organization Type: ' + orgType + '\n' +
+          'Resource Requested: ' + resource + '\n\n' +
+          'Please send the requested resource.'
+        );
+        var mailto = 'mailto:info@ahqshealthcare.com?subject=' + subject + '&body=' + body;
+        var successMsg = form.parentElement.querySelector('.ahqs-lead-success');
+        if (successMsg) {
+          successMsg.classList.add('ahqs-show');
+          successMsg.querySelector('span').textContent = email;
+        }
+        send('lead_form_submitted', {
+          resource_name: resource,
+          org_type: orgType,
+          link_text: name,
+          fallback: 'mailto'
+        });
+        window.location.href = mailto;
+      })
+      .finally(function() {
+        if (submitBtn) { submitBtn.textContent = 'Send Me the PDF →'; submitBtn.disabled = false; }
       });
-
-      // Open email client
-      window.location.href = mailto;
     });
   });
 
@@ -64,18 +106,45 @@
       var email = (form.querySelector('[name="email"]') || {}).value || '';
       if (!email) { alert('Please enter your email address.'); return; }
 
-      var subject = encodeURIComponent('AHQS Newsletter Signup');
-      var body = encodeURIComponent('Please add me to the AHQS newsletter list.\n\nEmail: ' + email);
-      var mailto = 'mailto:info@ahqshealthcare.com?subject=' + subject + '&body=' + body;
+      var formData = new FormData();
+      formData.append('email', email);
+      formData.append('_subject', 'AHQS Newsletter Signup');
+      formData.append('source_page', window.location.pathname);
 
-      send('newsletter_signup', { link_text: email });
+      var endpoint = form.getAttribute('data-formspree-endpoint') || 'https://formspree.io/f/placeholder';
 
       var btn = form.querySelector('button');
-      if (btn) { btn.textContent = 'Subscribed!'; btn.disabled = true; }
-      var input = form.querySelector('input');
-      if (input) { input.value = ''; input.placeholder = 'You are subscribed!'; }
+      if (btn) { btn.textContent = 'Subscribing...'; btn.disabled = true; }
 
-      window.location.href = mailto;
+      fetch(endpoint, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function(response) {
+        if (response.ok) {
+          send('newsletter_signup', { link_text: email });
+          if (btn) { btn.textContent = 'Subscribed!'; btn.disabled = true; }
+          var input = form.querySelector('input');
+          if (input) { input.value = ''; input.placeholder = 'You are subscribed!'; }
+        } else {
+          throw new Error('Newsletter signup failed');
+        }
+      })
+      .catch(function(err) {
+        // Fallback to mailto
+        var subject = encodeURIComponent('AHQS Newsletter Signup');
+        var body = encodeURIComponent('Please add me to the AHQS newsletter list.\n\nEmail: ' + email);
+        var mailto = 'mailto:info@ahqshealthcare.com?subject=' + subject + '&body=' + body;
+        if (btn) { btn.textContent = 'Subscribed!'; btn.disabled = true; }
+        var input = form.querySelector('input');
+        if (input) { input.value = ''; input.placeholder = 'You are subscribed!'; }
+        send('newsletter_signup', { link_text: email, fallback: 'mailto' });
+        window.location.href = mailto;
+      })
+      .finally(function() {
+        if (btn && btn.textContent !== 'Subscribed!') { btn.textContent = 'Subscribe'; btn.disabled = false; }
+      });
     });
   });
 
