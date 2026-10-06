@@ -70,6 +70,34 @@ h2{font-size:40px;line-height:1.14;color:var(--navy);text-align:center;margin:10
 .ahqs-related-card::before{content:'→';color:#087f83;margin-right:8px;font-weight:900}
 @media(max-width:620px){.ahqs-related-services h2{font-size:22px}.ahqs-related-grid{grid-template-columns:1fr}}
 
+
+
+<style id="ahqs-single-flow-contact">
+.ahqs-booking-flow{max-width:680px;margin:0 auto}
+.ahqs-booking-hero{text-align:center;margin-bottom:32px}
+.ahqs-booking-hero h2{font-size:26px;color:#071f3b;margin:0 0 8px}
+.ahqs-booking-hero p{color:#667789;font-size:16px;margin:0}
+.ahqs-primary-cta{display:block;width:100%;text-align:center;padding:18px;border-radius:14px;font-size:17px;font-weight:900;text-decoration:none;transition:.2s;margin-bottom:6px;background:linear-gradient(135deg,#d8a72b,#f0cb67);color:#071f3b;box-shadow:0 8px 28px rgba(216,167,43,.22)}
+.ahqs-primary-cta:hover{transform:translateY(-1px);box-shadow:0 12px 36px rgba(216,167,43,.30)}
+.ahqs-booking-alt{text-align:center;margin:16px 0 32px;font-size:14px;color:#667789}
+.ahqs-booking-alt a{color:#087f83;font-weight:700;text-decoration:none}
+.ahqs-booking-alt a:hover{text-decoration:underline}
+.ahqs-booking-divider{display:flex;align-items:center;gap:12px;margin:24px 0;text-align:center}
+.ahqs-booking-divider:before,.ahqs-booking-divider:after{content:"";flex:1;height:1px;background:#dce6eb}
+.ahqs-booking-divider span{font-size:13px;color:#667789;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.ahqs-inquiry-form{background:#fff;border:1px solid #dce6eb;border-radius:20px;padding:32px;box-shadow:0 10px 36px rgba(7,31,59,.06)}
+.ahqs-inquiry-form h2{font-size:20px;color:#071f3b;margin:0 0 6px}
+.ahqs-inquiry-form .form-intro{color:#667789;font-size:14px;margin:0 0 20px}
+.ahqs-contact-quick{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+.ahqs-quick-item{background:#f5f8fa;border:1px solid #dce6eb;border-radius:12px;padding:16px;text-align:center}
+.ahqs-quick-item .label{font-size:11px;font-weight:900;color:#087f83;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.ahqs-quick-item a{font-size:14px;font-weight:700;color:#071f3b;text-decoration:none;word-break:break-all}
+.ahqs-quick-item a:hover{color:#087f83}
+.ahqs-quick-item .value{font-size:14px;font-weight:700;color:#071f3b}
+.ahqs-service-model-badge{display:inline-block;background:#eaf7f7;color:#087f83;border:1px solid #cfe7e5;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:700;margin-top:8px}
+@media(max-width:620px){.ahqs-contact-quick{grid-template-columns:1fr}.ahqs-inquiry-form{padding:24px 20px}}
+</style>
+
 </style>
 <!-- AHQS typography hierarchy refinement -->
 <style id="ahqs-heading-hierarchy-fix">
@@ -496,37 +524,43 @@ body{font-size:16px;line-height:1.68;text-rendering:optimizeLegibility;-webkit-f
 </div>
 
 <section class="pagehero"><div class="container"><div class="eyebrow">CONTACT AHQS</div><h1>Healthcare Quality &amp; Accreditation Consulting</h1><p>Whether you are a hospital, clinical laboratory, transfusion service, healthcare facility or quality team preparing for accreditation or reaccreditation, strengthening clinical governance, addressing audit findings, improving patient safety, managing risk, building a stronger quality system or pursuing organizational excellence, start the conversation here.</p></div></section>
-<section class="section"><div class="container contact-grid">
-<div class="contact-card booking-panel" id="book-consultation"><h2>Start with a focused conversation</h2><p>For the fastest path, choose one of our two complimentary 20-minute discovery calls. Hospitals and healthcare organizations can book the Healthcare Accreditation &amp; Quality consultation; laboratories and transfusion services can book the Laboratory Quality consultation.</p>
-<div class="cta-row" style="display:block">
-<a class="btn btn-gold" href="https://calendar.app.google/rpxEZoQH1sNFkM4f7" rel="noopener noreferrer" style="width:100%;margin-bottom:10px" target="_blank">🏥 Book Free Healthcare Accreditation &amp; Quality Call</a>
-<a class="btn btn-navy" href="https://calendar.app.google/uPrKjxvVN3qoZRbS9" rel="noopener noreferrer" style="width:100%" target="_blank">🔬 Book Free Laboratory Quality Call</a><div class="engagement-note"><strong>What happens after the free 20-minute consultation?</strong><br/>If AHQS support is appropriate, you receive a written scope describing the recommended deliverables, timeline and professional fee before any paid work begins. There is no obligation to proceed and no hidden subscription.</div>
+<section class="section"><div class="container">
+<div class="ahqs-booking-flow" id="book-consultation">
+<div class="ahqs-booking-hero">
+<h2>Start with a free 20-minute consultation</h2>
+<p>One conversation. We identify your highest-priority gap and the best path forward. No obligation, no paid work without an approved written proposal.</p>
 </div>
-<p><b>Phone</b><br/><a href="tel:+19843173711">+1 (984) 317-3711</a></p>
-<p><b>Email</b><br/><a href="mailto:info@ahqshealthcare.com">info@ahqshealthcare.com</a></p>
-<p><b>LinkedIn</b><br/><a href="https://www.linkedin.com/in/isam-abuhurira-07091639a" rel="noopener noreferrer" target="_blank">Connect with AHQS Founder</a></p>
-<p><b>Service model</b><br/>Virtual consulting and quality support, with on-site engagements available by agreement.</p><p class="booking-fallback">If a booking button does not open on your device, <a href="mailto:info@ahqshealthcare.com?subject=AHQS%20Consultation%20Request">email AHQS directly</a> and we will arrange the consultation.</p></div>
-<form class="form" onsubmit="sendInquiry(event)">
-<h2 style="text-align:left;margin:0 0 10px">Send an Inquiry</h2><p style="color:#667789;margin-top:0">Complete the form below. AHQS will prepare your inquiry in your email application and copy the inquiry text to your clipboard as a fallback.</p>
+
+<a class="ahqs-primary-cta" href="https://calendar.app.google/rpxEZoQH1sNFkM4f7" rel="noopener noreferrer" target="_blank">📅 Book Your Free Consultation Now</a>
+
+<div class="ahqs-booking-alt">
+Prefer to choose by pathway? <a href="https://calendar.app.google/rpxEZoQH1sNFkM4f7" rel="noopener noreferrer" target="_blank">🏥 Hospital & Healthcare Quality</a> or <a href="https://calendar.app.google/uPrKjxvVN3qoZRbS9" rel="noopener noreferrer" target="_blank">🔬 Laboratory & Transfusion Quality</a>
+</div>
+
+<div class="ahqs-booking-divider"><span>Or send a detailed inquiry</span></div>
+
+<form class="ahqs-inquiry-form" onsubmit="sendInquiry(event)">
+<h2>Tell us about your challenge</h2>
+<p class="form-intro">Share your needs below. AHQS reviews your inquiry and responds within one business day to schedule your consultation.</p>
 <div class="field"><label>Your Name *</label><input id="name" required=""/></div>
 <div class="field"><label>Organization / Laboratory</label><input id="org"/></div>
 <div class="field"><label>Email *</label><input id="email" required="" type="email"/></div>
 <div class="field"><label>Phone</label><input id="phone"/></div>
 <div class="field"><label>How can AHQS help? *</label><select id="service" required=""><option value="">Select a service</option>
-<option>Hospital JCI Accreditation &amp; Reaccreditation Readiness Support</option>
-<option>ISO 15189 Accreditation &amp; Reaccreditation Readiness Support</option>
+<option>Hospital JCI Accreditation & Reaccreditation Readiness Support</option>
+<option>ISO 15189 Accreditation & Reaccreditation Readiness Support</option>
 <option>CAP Accreditation Readiness</option>
-<option>AABB Accreditation &amp; Reaccreditation Readiness Support</option>
-<option>Clinical Audit &amp; Governance Review</option>
-<option>Healthcare Excellence &amp; Performance Improvement</option>
-<option>Patient Safety &amp; Risk Management</option>
+<option>AABB Accreditation & Reaccreditation Readiness Support</option>
+<option>Clinical Audit & Governance Review</option>
+<option>Healthcare Excellence & Performance Improvement</option>
+<option>Patient Safety & Risk Management</option>
 <option>Laboratory Inspection Readiness Assessment</option>
-<option>Mock Inspection &amp; Gap Assessment</option>
+<option>Mock Inspection & Gap Assessment</option>
 <option>Quality Management System Review</option>
-<option>CAPA &amp; Root Cause Analysis</option>
-<option>Competency &amp; Training Review</option>
-<option>Transfusion Medicine &amp; Blood Bank Quality Support</option>
-<option>Quality &amp; Accreditation Coaching</option>
+<option>CAPA & Root Cause Analysis</option>
+<option>Competency & Training Review</option>
+<option>Transfusion Medicine & Blood Bank Quality Support</option>
+<option>Quality & Accreditation Coaching</option>
 <option>Digital Quality Tools</option>
 <option>Ongoing Quality Partner Support</option>
 <option>Other</option></select></div>
@@ -535,11 +569,37 @@ body{font-size:16px;line-height:1.68;text-rendering:optimizeLegibility;-webkit-f
 <label style="font-weight:700"><input id="noPhi" required="" style="width:auto;margin-right:8px" type="checkbox"/>I confirm that I have not included patient-identifiable information or protected health information (PHI) in this inquiry.</label>
 </div>
 <div class="field" style="font-size:13px">
-<label style="font-weight:700"><input id="acceptTerms" required="" style="width:auto;margin-right:8px" type="checkbox"/>I have read and accept the <a href="privacy.html" style="color:var(--teal);text-decoration:underline">Privacy &amp; Accessibility</a> and <a href="terms.html" style="color:var(--teal);text-decoration:underline">Terms &amp; Disclaimer</a>.</label>
+<label style="font-weight:700"><input id="acceptTerms" required="" style="width:auto;margin-right:8px" type="checkbox"/>I have read and accept the <a href="privacy.html" style="color:var(--teal);text-decoration:underline">Privacy & Accessibility</a> and <a href="terms.html" style="color:var(--teal);text-decoration:underline">Terms & Disclaimer</a>.</label>
 </div>
-<button class="btn btn-gold" type="submit" id="inquirySubmitBtn">Send Inquiry</button>
-<p class="notice">This inquiry form prepares an email in your own email application. Do not submit PHI, patient-identifiable data, passwords, proprietary accreditation materials, or other sensitive records through this form or ordinary email.</p><p class="notice"><b>Form fallback:</b> If your browser does not open an email application, use the direct email link above to contact AHQS.</p>
-<div class="status-message" id="inquiryStatus">Your inquiry has been sent. We will respond within one business day.</div></form></div></section><section class="section soft" id="consultation-expectations"><div class="container"><div class="kicker">CLEAR FROM THE FIRST CONVERSATION</div><h2>A consultation should create clarity—not pressure</h2><p class="lead">The complimentary 20-minute conversation is a focused triage discussion. It is not a sales obligation and no paid work begins without an agreed scope.</p><div class="ahqs-next-steps"><div class="ahqs-next-step"><span class="n">1</span><b>Your priority</b><span>Explain the accreditation, governance, risk, audit or laboratory-quality issue that needs attention.</span></div><div class="ahqs-next-step"><span class="n">2</span><b>Our initial view</b><span>We clarify the likely risk, the evidence to examine and whether independent support would add value.</span></div><div class="ahqs-next-step"><span class="n">3</span><b>Your choice</b><span>If further support makes sense, you receive a clear scope, timeline and professional fee for approval before work begins.</span></div></div></div></section>
+<button class="btn btn-gold" type="submit" id="inquirySubmitBtn" style="width:100%;font-size:16px;padding:14px">Send Inquiry & Request Consultation</button>
+<p class="notice">This inquiry form sends your details securely to AHQS. Do not submit PHI, patient-identifiable data, passwords, proprietary accreditation materials, or other sensitive records through this form.</p>
+<div class="status-message" id="inquiryStatus">Your inquiry has been sent. We will respond within one business day.</div>
+<div class="ahqs-engagement-note" style="margin-top:20px"><strong>What happens after the free 20-minute consultation?</strong><br/>If AHQS support is appropriate, you receive a written scope describing the recommended deliverables, timeline and professional fee before any paid work begins. There is no obligation to proceed and no hidden subscription.</div>
+</form>
+
+<div class="ahqs-contact-quick">
+<div class="ahqs-quick-item">
+<div class="label">Phone</div>
+<a href="tel:+19843173711">+1 (984) 317-3711</a>
+</div>
+<div class="ahqs-quick-item">
+<div class="label">Email</div>
+<a href="mailto:info@ahqshealthcare.com">info@ahqshealthcare.com</a>
+</div>
+<div class="ahqs-quick-item">
+<div class="label">LinkedIn</div>
+<a href="https://www.linkedin.com/in/isam-abuhurira-07091639a" rel="noopener noreferrer" target="_blank">Connect with Founder</a>
+</div>
+</div>
+
+<div style="text-align:center;margin-top:16px">
+<span class="ahqs-service-model-badge">Virtual consulting worldwide · On-site engagements available by agreement</span>
+</div>
+
+<p class="booking-fallback" style="text-align:center;margin-top:12px;font-size:13px;color:#667789">If a booking button does not open on your device, <a href="mailto:info@ahqshealthcare.com?subject=AHQS%20Consultation%20Request" style="color:#087f83;font-weight:700">email AHQS directly</a> and we will arrange the consultation.</p>
+
+</div>
+</section><section class="section soft" id="consultation-expectations"><div class="container"><div class="kicker">CLEAR FROM THE FIRST CONVERSATION</div><h2>A consultation should create clarity—not pressure</h2><p class="lead">The complimentary 20-minute conversation is a focused triage discussion. It is not a sales obligation and no paid work begins without an agreed scope.</p><div class="ahqs-next-steps"><div class="ahqs-next-step"><span class="n">1</span><b>Your priority</b><span>Explain the accreditation, governance, risk, audit or laboratory-quality issue that needs attention.</span></div><div class="ahqs-next-step"><span class="n">2</span><b>Our initial view</b><span>We clarify the likely risk, the evidence to examine and whether independent support would add value.</span></div><div class="ahqs-next-step"><span class="n">3</span><b>Your choice</b><span>If further support makes sense, you receive a clear scope, timeline and professional fee for approval before work begins.</span></div></div></div></section>
 <section class="section soft"><div class="container faq"><div class="kicker">FREQUENT QUESTIONS</div><h2>Before you contact us</h2>
 <details><summary>Does AHQS provide accreditation or certification?</summary><p>No. AHQS provides independent quality-improvement and accreditation-readiness consulting. Accreditation and certification decisions remain with the applicable authorized organizations.</p></details>
 <details><summary>Can AHQS support laboratories virtually?</summary><p>Yes. Many coaching, document review, readiness, CAPA and quality-management activities can be performed virtually. On-site services can be discussed depending on scope and location.</p></details>
