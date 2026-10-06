@@ -37,7 +37,7 @@
       formData.append('source_page', window.location.pathname);
 
       // Use Formspree API endpoint
-      var formspreeEndpoint = 'https://formspree.io/f/placeholder';
+      var formspreeEndpoint = 'https://formspree.io/f/mnpjjdzo';
       // The endpoint will be set from a data attribute or config
       var endpoint = form.getAttribute('data-formspree-endpoint') || formspreeEndpoint;
 
@@ -111,7 +111,7 @@
       formData.append('_subject', 'AHQS Newsletter Signup');
       formData.append('source_page', window.location.pathname);
 
-      var endpoint = form.getAttribute('data-formspree-endpoint') || 'https://formspree.io/f/placeholder';
+      var endpoint = form.getAttribute('data-formspree-endpoint') || 'https://formspree.io/f/mnpjjdzo';
 
       var btn = form.querySelector('button');
       if (btn) { btn.textContent = 'Subscribing...'; btn.disabled = true; }
