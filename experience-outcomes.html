@@ -52,12 +52,14 @@ h2{font-size:40px;line-height:1.14;color:var(--navy);text-align:center;margin:10
 @media(max-width:620px){.ahqs-brand-signature{padding:24px 0}.ahqs-brand-signature .brand-card{margin:0 16px;padding:16px}.ahqs-brand-signature img{width:min(100%,290px)}}
 
 
-/* AHQS Back Button */
-.ahqs-back-bar{display:flex;align-items:center;gap:8px;padding:12px 0 0;max-width:1200px;margin:0 auto}
-.ahqs-back-button{display:inline-flex;align-items:center;gap:6px;background:rgba(8,127,131,.08);color:#075f63;border:1px solid rgba(8,127,131,.2);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:800;cursor:pointer;transition:all .2s;text-decoration:none;font-family:inherit}
-.ahqs-back-button:hover{background:rgba(8,127,131,.15);border-color:rgba(8,127,131,.4)}
-.ahqs-back-button svg{width:16px;height:16px;flex-shrink:0}
-@media(max-width:620px){.ahqs-back-button{padding:6px 12px;font-size:12px}}
+
+/* AHQS Integrated Page Back Link */
+.ahqs-page-back{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 20px;max-width:1200px;margin:0 auto;font-family:inherit}
+.ahqs-back-link{display:inline-flex;align-items:center;gap:6px;background:rgba(8,127,131,.08);color:#075f63;border:1px solid rgba(8,127,131,.2);border-radius:999px;padding:8px 18px;font-size:14px;font-weight:800;text-decoration:none;transition:all .2s;cursor:pointer}
+.ahqs-back-link:hover{background:rgba(8,127,131,.15);border-color:rgba(8,127,131,.4);color:#054a4d}
+.ahqs-back-note{color:#6b8290;font-size:13px;font-weight:500}
+@media(max-width:620px){.ahqs-back-link{padding:7px 14px;font-size:13px}.ahqs-back-note{font-size:12px;width:100%;margin-top:4px}}
+
 
 /* AHQS Related Services Grid */
 .ahqs-related-services{max-width:1200px;margin:0 auto;padding:40px 20px}
@@ -503,8 +505,16 @@ body{font-size:16px;line-height:1.68;text-rendering:optimizeLegibility;-webkit-f
 </style>
 
 </head><body>
-<div class="ahqs-back-bar"><button class="ahqs-back-button" type="button" data-fallback="about.html" onclick="ahqsGoBack(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back</button></div>
+
 <div class="ahqs-topbar"><div class="ahqs-shell"><span>Independent Healthcare Quality, Accreditation, Clinical Governance &amp; Laboratory Excellence Support — Worldwide</span><span class="ahqs-contact-mini"><a href="tel:+19843173711">+1 (984) 317-3711</a>  •  <a href="mailto:info@ahqshealthcare.com">info@ahqshealthcare.com</a></span></div></div><header class="ahqs-site-header"><div class="ahqs-shell ahqs-header-inner"><a aria-label="AHQS — Accelerate Healthcare Quality Solutions, home" class="ahqs-brand-home" href="/"><span aria-hidden="true" class="ahqs-mark">AHQS</span><span aria-hidden="true" class="ahqs-brand-tagline">Accelerate Healthcare Quality Solutions</span></a><nav aria-label="Primary navigation" class="ahqs-primary-nav"><a href="/">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="resources.html">Readiness Hub</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="ahqs-nav-cta" href="contact.html#book-consultation">Free 20-Min Consultation</a></nav><details class="ahqs-mobile-menu"><summary aria-label="Open site navigation">Menu</summary><div class="ahqs-mobile-links"><a href="/">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="resources.html">Readiness Hub</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="ahqs-nav-cta" href="contact.html#book-consultation">Free 20-Min Consultation</a></div></details></div></header>
+<div class="ahqs-page-back">
+  <a class="ahqs-back-link" href="about.html"
+     onclick="try{if(document.referrer && new URL(document.referrer).origin===location.origin){event.preventDefault();history.back();}}catch(e){}">
+    ← Back to the next page
+  </a>
+  <span class="ahqs-back-note">Return to the previous AHQS page, or back to the main section.</span>
+</div>
+
 <section class="pagehero"><div class="container"><div class="eyebrow">EXPERIENCE &amp; OUTCOMES</div><h1>Accreditation experience shaped by implementation, governance and real-world readiness</h1><p>AHQS draws on more than two decades of international healthcare and laboratory quality experience across government and private organizations, including professional expertise strengthened in the United States. The delivery history behind AHQS spans ground-up quality-system development, clinical governance, risk, audit, patient safety and preparation through ISO 15189, CAP and JCI accreditation journeys.</p></div></section>
 <section class="section"><div class="container"><div class="kicker">FROM FOUNDATION TO EXTERNAL ASSESSMENT</div><h2>Evidence of experience is strongest when it follows the entire journey</h2><p class="lead">The work represented here is not limited to pre-survey document checking. It includes designing and strengthening the systems organizations need to operate, demonstrate and sustain quality before, during and after accreditation.</p><div class="proof-grid"><div class="proof-item"><strong>Ground-Up Systems</strong><span>Quality-system architecture, governance, document control, competency, risk, audit and performance processes.</span></div><div class="proof-item"><strong>Readiness &amp; Mock Review</strong><span>Gap assessment, evidence sampling, tracers, mock assessment, priority action planning and staff preparation.</span></div><div class="proof-item"><strong>Accreditation Journeys</strong><span>Professional experience supporting ISO 15189, CAP and JCI preparation through external accreditation pathways.</span></div><div class="proof-item"><strong>Sustainability</strong><span>CAPA, management review, effectiveness checks and capability transfer designed to keep readiness active after the survey.</span></div></div></div></section>
 <section class="section" id="experience-pathways"><div class="container"><div class="kicker">REPRESENTATIVE DELIVERY PATHWAYS</div><h2>Experience that follows the work from foundation to accreditation</h2><p class="lead">Client identities remain confidential unless disclosure is authorized. These examples describe the types of accreditation journeys and implementation work represented in the professional delivery history behind AHQS.</p><div class="ahqs-case-stack">

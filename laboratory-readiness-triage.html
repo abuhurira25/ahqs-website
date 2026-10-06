@@ -34,12 +34,14 @@
 @media(max-width:900px){.menu{display:none}.hero-grid{grid-template-columns:1fr}.grid3{grid-template-columns:1fr 1fr}.trust-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:44px}}
 @media(max-width:620px){.container{padding:0 16px}.hero{padding:58px 0}.hero h1{font-size:37px}.section{padding:58px 0}.section h2{font-size:31px}.grid3,.grid2,.trust-grid,.footer-grid{grid-template-columns:1fr}.trust{padding:26px}.mobile-cta{display:block;position:fixed;z-index:100;left:12px;right:12px;bottom:10px}.mobile-cta .btn{width:100%;box-shadow:0 12px 34px rgba(7,31,59,.32)}}
 
-/* AHQS Back Button */
-.ahqs-back-bar{display:flex;align-items:center;gap:8px;padding:12px 0 0;max-width:1200px;margin:0 auto}
-.ahqs-back-button{display:inline-flex;align-items:center;gap:6px;background:rgba(8,127,131,.08);color:#075f63;border:1px solid rgba(8,127,131,.2);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:800;cursor:pointer;transition:all .2s;text-decoration:none;font-family:inherit}
-.ahqs-back-button:hover{background:rgba(8,127,131,.15);border-color:rgba(8,127,131,.4)}
-.ahqs-back-button svg{width:16px;height:16px;flex-shrink:0}
-@media(max-width:620px){.ahqs-back-button{padding:6px 12px;font-size:12px}}
+
+/* AHQS Integrated Page Back Link */
+.ahqs-page-back{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 20px;max-width:1200px;margin:0 auto;font-family:inherit}
+.ahqs-back-link{display:inline-flex;align-items:center;gap:6px;background:rgba(8,127,131,.08);color:#075f63;border:1px solid rgba(8,127,131,.2);border-radius:999px;padding:8px 18px;font-size:14px;font-weight:800;text-decoration:none;transition:all .2s;cursor:pointer}
+.ahqs-back-link:hover{background:rgba(8,127,131,.15);border-color:rgba(8,127,131,.4);color:#054a4d}
+.ahqs-back-note{color:#6b8290;font-size:13px;font-weight:500}
+@media(max-width:620px){.ahqs-back-link{padding:7px 14px;font-size:13px}.ahqs-back-note{font-size:12px;width:100%;margin-top:4px}}
+
 
 /* AHQS Related Services Grid */
 .ahqs-related-services{max-width:1200px;margin:0 auto;padding:40px 20px}
@@ -53,12 +55,20 @@
 </style>
 </head>
 <body>
-<div class="ahqs-back-bar"><button class="ahqs-back-button" type="button" data-fallback="resources.html" onclick="ahqsGoBack(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back</button></div>
+
 
 <div class="topbar"><div class="container"><span>Independent laboratory quality and accreditation-readiness support</span><span>Worldwide virtual support · info@ahqshealthcare.com</span></div></div>
 <nav class="nav"><div class="container navin"><a class="logo" href="index.html"><span class="logomark">AHQS</span><span>AHQS<small>ACCELERATE HEALTHCARE QUALITY SOLUTIONS</small></span></a><div class="menu"><a href="index.html">Home</a><a href="services.html">Services</a><a href="resources.html">Resources</a><a href="about.html">About</a><a class="btn btn-gold" href="https://calendar.app.google/rpxEZoQH1sNFkM4f7" target="_blank" rel="noopener noreferrer">Book Free Triage</a></div></div></nav>
 <main>
 <header class="hero"><div class="container hero-grid"><div><div class="eyebrow">COMPLIMENTARY 20-MINUTE LABORATORY READINESS TRIAGE</div><h1>What could create your next inspection finding—<span>and what should you address first?</span></h1><p class="lead">Bring one CAP, ISO 15189, AABB or laboratory-quality concern. In 20 focused minutes, AHQS will help you clarify the risk, prioritize the next two or three actions and choose a practical way forward.</p><div class="cta-row"><a class="btn btn-gold" href="https://calendar.app.google/rpxEZoQH1sNFkM4f7" target="_blank" rel="noopener noreferrer">Reserve My Free 20-Minute Triage</a><a class="btn btn-outline" href="mailto:info@ahqshealthcare.com?subject=Free%2020-Minute%20Laboratory%20Readiness%20Triage">Email AHQS</a></div><div class="microtrust"><span>✓ No obligation</span><span>✓ Worldwide virtual consultation</span><span>✓ No PHI or confidential records required</span></div></div><aside class="scorecard"><div class="eyebrow">USE THE CALL FOR</div><h2>Your highest-priority readiness concern</h2><ul><li>Upcoming CAP, ISO 15189 or AABB assessment</li><li>Recurring findings or weak CAPA effectiveness</li><li>Competency, QC/PT or evidence gaps</li><li>Document control or implementation inconsistency</li><li>Transfusion-service quality and readiness</li></ul></aside></div></header>
+<div class="ahqs-page-back">
+  <a class="ahqs-back-link" href="resources.html"
+     onclick="try{if(document.referrer && new URL(document.referrer).origin===location.origin){event.preventDefault();history.back();}}catch(e){}">
+    ← Back to the next page
+  </a>
+  <span class="ahqs-back-note">Return to the previous AHQS page, or back to the main section.</span>
+</div>
+
 
 <section class="section soft"><div class="container"><div class="kicker">WHAT YOU RECEIVE</div><h2>A focused decision—not a generic presentation.</h2><p class="section-lead">The consultation is designed to help a laboratory leader move from uncertainty to a prioritized next step.</p><div class="grid3"><div class="card"><div class="step">01</div><h3>Clarify the risk</h3><p>Define the specific readiness issue and why it matters to inspection, quality or patient safety.</p></div><div class="card"><div class="step">02</div><h3>Prioritize actions</h3><p>Identify the two or three actions that deserve attention first based on risk and practical impact.</p></div><div class="card"><div class="step">03</div><h3>Select the right pathway</h3><p>Decide whether self-correction, focused coaching, a targeted review or broader readiness support is most appropriate.</p></div></div></div></section>
 

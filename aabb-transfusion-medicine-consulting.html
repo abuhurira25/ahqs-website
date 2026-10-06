@@ -196,12 +196,14 @@ footer a{
 @media(max-width:620px){.ahqs-brand-signature{padding:24px 0}.ahqs-brand-signature .brand-card{margin:0 16px;padding:16px}.ahqs-brand-signature img{width:min(100%,290px)}}
 
 
-/* AHQS Back Button */
-.ahqs-back-bar{display:flex;align-items:center;gap:8px;padding:12px 0 0;max-width:1200px;margin:0 auto}
-.ahqs-back-button{display:inline-flex;align-items:center;gap:6px;background:rgba(8,127,131,.08);color:#075f63;border:1px solid rgba(8,127,131,.2);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:800;cursor:pointer;transition:all .2s;text-decoration:none;font-family:inherit}
-.ahqs-back-button:hover{background:rgba(8,127,131,.15);border-color:rgba(8,127,131,.4)}
-.ahqs-back-button svg{width:16px;height:16px;flex-shrink:0}
-@media(max-width:620px){.ahqs-back-button{padding:6px 12px;font-size:12px}}
+
+/* AHQS Integrated Page Back Link */
+.ahqs-page-back{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 20px;max-width:1200px;margin:0 auto;font-family:inherit}
+.ahqs-back-link{display:inline-flex;align-items:center;gap:6px;background:rgba(8,127,131,.08);color:#075f63;border:1px solid rgba(8,127,131,.2);border-radius:999px;padding:8px 18px;font-size:14px;font-weight:800;text-decoration:none;transition:all .2s;cursor:pointer}
+.ahqs-back-link:hover{background:rgba(8,127,131,.15);border-color:rgba(8,127,131,.4);color:#054a4d}
+.ahqs-back-note{color:#6b8290;font-size:13px;font-weight:500}
+@media(max-width:620px){.ahqs-back-link{padding:7px 14px;font-size:13px}.ahqs-back-note{font-size:12px;width:100%;margin-top:4px}}
+
 
 /* AHQS Related Services Grid */
 .ahqs-related-services{max-width:1200px;margin:0 auto;padding:40px 20px}
@@ -645,8 +647,16 @@ body{font-size:16px;line-height:1.68;text-rendering:optimizeLegibility;-webkit-f
 
 </head>
 <body>
-<div class="ahqs-back-bar"><button class="ahqs-back-button" type="button" data-fallback="services.html" onclick="ahqsGoBack(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back</button></div>
+
 <div class="ahqs-topbar"><div class="ahqs-shell"><span>Independent Healthcare Quality, Accreditation, Clinical Governance &amp; Laboratory Excellence Support — Worldwide</span><span class="ahqs-contact-mini"><a href="tel:+19843173711">+1 (984) 317-3711</a>  •  <a href="mailto:info@ahqshealthcare.com">info@ahqshealthcare.com</a></span></div></div><header class="ahqs-site-header"><div class="ahqs-shell ahqs-header-inner"><a aria-label="AHQS — Accelerate Healthcare Quality Solutions, home" class="ahqs-brand-home" href="/"><span aria-hidden="true" class="ahqs-mark">AHQS</span><span aria-hidden="true" class="ahqs-brand-tagline">Accelerate Healthcare Quality Solutions</span></a><nav aria-label="Primary navigation" class="ahqs-primary-nav"><a href="/">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="resources.html">Readiness Hub</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="ahqs-nav-cta" href="contact.html#book-consultation">Free 20-Min Consultation</a></nav><details class="ahqs-mobile-menu"><summary aria-label="Open site navigation">Menu</summary><div class="ahqs-mobile-links"><a href="/">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="resources.html">Readiness Hub</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="ahqs-nav-cta" href="contact.html#book-consultation">Free 20-Min Consultation</a></div></details></div></header>
+<div class="ahqs-page-back">
+  <a class="ahqs-back-link" href="services.html"
+     onclick="try{if(document.referrer && new URL(document.referrer).origin===location.origin){event.preventDefault();history.back();}}catch(e){}">
+    ← Back to the next page
+  </a>
+  <span class="ahqs-back-note">Return to the previous AHQS page, or back to the main section.</span>
+</div>
+
 <header class="hero">
 <div class="container">
 <div class="eyebrow">
