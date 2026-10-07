@@ -1,0 +1,24 @@
+{
+  "name": "AHQS Healthcare — Quality & Accreditation Readiness",
+  "short_name": "AHQS Healthcare",
+  "description": "Independent healthcare quality, accreditation readiness, clinical governance, clinical risk, clinical audit, patient safety and laboratory excellence consulting for hospitals and laboratories worldwide.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#071f3b",
+  "theme_color": "#071f3b",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["medical", "health", "business", "productivity"],
+  "icons": [
+    {"src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"},
+    {"src": "ahqs-official-logo-hd.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Services", "short_name": "Services", "description": "View AHQS consulting services", "url": "/services.html"},
+    {"name": "Resources", "short_name": "Resources", "description": "Download free quality tools and templates", "url": "/products.html"},
+    {"name": "Readiness Hub", "short_name": "Readiness Hub", "description": "Access the AHQS Readiness Hub", "url": "/resources.html"},
+    {"name": "Contact", "short_name": "Contact", "description": "Book a free consultation", "url": "/contact.html"}
+  ]
+}
