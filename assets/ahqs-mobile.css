@@ -1,0 +1,65 @@
+/* AHQS mobile usability layer — loaded last on every page */
+img,svg,video{max-width:100%}
+img{height:auto}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+.ahqs-primary-nav a[aria-current="page"],.ahqs-mobile-links a[aria-current="page"]{color:#087f83!important;font-weight:900!important;background:#eef7f7}
+.ahqs-to-top{position:fixed;right:14px;bottom:96px;z-index:1001;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:#071f3b;color:#fff;font-size:20px;font-weight:900;line-height:1;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(7,31,59,.28);opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .25s,transform .25s;cursor:pointer}
+.ahqs-to-top.show{opacity:1;pointer-events:auto;transform:none}
+.ahqs-to-top:focus-visible{outline:3px solid #f0cb67;outline-offset:2px}
+.ahqs-product-buy.ahqs-free-cta{background:#087f83!important;color:#fff!important;border-color:#087f83!important;text-align:center}
+
+@media (max-width:760px){
+  /* Squeezed multi-column grids → stacked */
+  .grid4,.trust-strip,.grid3,.checkgrid{grid-template-columns:1fr!important;gap:12px!important}
+  .statrow{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .grid4>*,.trust-strip>*,.statrow>*{min-width:0;word-break:normal;overflow-wrap:break-word;hyphens:manual}
+
+  /* Compact top contact bar: no long tagline, three clear tap targets */
+  .ahqs-topbar .ahqs-shell{display:block!important;padding:6px 10px!important;min-height:0!important}
+  .ahqs-topbar .ahqs-shell>span:first-child{display:none!important}
+  .ahqs-topbar .ahqs-contact-mini{display:flex!important;flex-wrap:wrap;justify-content:center;gap:6px 8px;margin:0!important;font-size:0!important;line-height:0}
+  .ahqs-topbar .ahqs-contact-mini a{font-size:12.5px!important;line-height:1.2;display:inline-flex!important;align-items:center;min-height:34px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08);color:#fff!important;white-space:nowrap}
+  .ahqs-topbar .ahqs-contact-mini a[href*="linkedin"]{color:#9fd3ff!important}
+
+  /* Readable small text (12px floor) */
+  .ahqs-brand-tagline{font-size:11px!important;line-height:1.25!important}
+  .ahqs-cred-label,.ahqs-product-disclaimer,.ahqs-product-tag,.ahqs-founder-photo-badge,.ahqs-pricing-badge,.ahqs-product-badge,.ahqs-copyright,.label,.ahqs-back-note,.notice{font-size:12px!important;line-height:1.5}
+
+  /* Comfortable tap targets */
+  .ahqs-site-footer .ahqs-footer-grid a{display:block;padding:9px 0;min-height:40px;line-height:1.4}
+  .ahqs-dock-close{min-width:40px!important;min-height:40px!important;font-size:20px!important}
+  a[href].ahqs-read-more,.ahqs-hub-card a,.ahqs-guide-card a,a.read-guide{display:inline-block;padding:8px 0}
+  .ahqs-back-link{min-height:40px;display:inline-flex!important;align-items:center}
+  .ahqs-mobile-links a{padding:13px 14px!important}
+
+  /* Forms: 16px inputs stop iOS zoom; full-width controls */
+  input:not([type=checkbox]):not([type=radio]),select,textarea{font-size:16px!important;max-width:100%}
+  input[type=checkbox],input[type=radio]{width:22px;height:22px;flex:0 0 auto}
+
+  /* Wide tables scroll inside their own box instead of the page */
+  .ahqs-table-wrap,.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+  /* Keep the consultation dock from covering the end of the page */
+  body{padding-bottom:84px}
+  .ahqs-conversion-dock{left:10px!important;right:10px!important;bottom:calc(10px + env(safe-area-inset-bottom))!important}
+}
+@media (max-width:340px){
+  .statrow{grid-template-columns:1fr!important}
+  h1{overflow-wrap:break-word}
+}
+@media (prefers-reduced-motion:reduce){.ahqs-to-top{transition:none}}
+
+/* Protect the site header menu from page-level <details> (FAQ) styles */
+.ahqs-site-header details.ahqs-mobile-menu{background:none!important;border:0!important;padding:0!important;margin:0!important;box-shadow:none!important;width:auto!important;flex:0 0 auto}
+.ahqs-site-header .ahqs-mobile-menu summary{display:inline-block!important;width:auto!important;font-size:15px!important;padding:10px 14px!important;border:1px solid #cbd9e1!important;border-radius:10px!important;background:#fff!important;color:#071f3b!important;margin:0!important}
+.ahqs-site-header .ahqs-mobile-menu summary:after,.ahqs-site-header .ahqs-mobile-menu summary:before{content:none!important}
+.ahqs-site-header .ahqs-header-inner{display:flex!important;align-items:center!important;justify-content:space-between!important;flex-wrap:nowrap!important}
+.ahqs-site-header .ahqs-brand-home{margin:0!important}
+
+@media (max-width:760px){
+  .statrow .stat{padding:14px!important}
+  .statrow .stat b{font-size:22px!important;line-height:1.2;overflow-wrap:normal;word-break:normal}
+  .statrow .stat span{font-size:13px!important;line-height:1.45!important}
+  /* Only the current page is highlighted in the mobile menu */
+  .ahqs-mobile-links a[href="resources.html"]:not([aria-current]){color:#29475e!important;font-weight:750!important}
+}

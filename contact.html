@@ -566,7 +566,7 @@ body{font-size:16px;line-height:1.68;text-rendering:optimizeLegibility;-webkit-f
 </div>
 <button class="btn btn-gold" type="submit" id="inquirySubmitBtn" style="width:100%;font-size:16px;padding:14px">Send Inquiry & Request Free Consultation</button>
 <p class="notice">This inquiry form sends your details securely to AHQS. Do not submit PHI, patient-identifiable data, passwords, proprietary accreditation materials, or other sensitive records through this form.</p>
-<div class="status-message" id="inquiryStatus">Your inquiry has been sent. We will respond within one business day.</div>
+<div class="status-message" id="inquiryStatus" role="status" style="display:none">Your inquiry has been sent. We will respond within one business day.</div>
 <div class="ahqs-engagement-note" style="margin-top:20px"><strong>What happens after the free 20-minute consultation?</strong><br/>If AHQS support is appropriate, you receive a written scope describing the recommended deliverables, timeline and professional fee before any paid work begins. There is no obligation to proceed and no hidden subscription.</div>
 </form>
 
@@ -594,7 +594,7 @@ body{font-size:16px;line-height:1.68;text-rendering:optimizeLegibility;-webkit-f
 </div>
 
 </div>
-</section>><section class="section soft" id="consultation-expectations"><div class="container"><div class="kicker">CLEAR FROM THE FIRST CONVERSATION</div><h2>A consultation should create clarity—not pressure</h2><p class="lead">The complimentary 20-minute conversation is a focused triage discussion. It is not a sales obligation and no paid work begins without an agreed scope.</p><div class="ahqs-next-steps"><div class="ahqs-next-step"><span class="n">1</span><b>Your priority</b><span>Explain the accreditation, governance, risk, audit or laboratory-quality issue that needs attention.</span></div><div class="ahqs-next-step"><span class="n">2</span><b>Our initial view</b><span>We clarify the likely risk, the evidence to examine and whether independent support would add value.</span></div><div class="ahqs-next-step"><span class="n">3</span><b>Your choice</b><span>If further support makes sense, you receive a clear scope, timeline and professional fee for approval before work begins.</span></div></div></div></section>
+</section><section class="section soft" id="consultation-expectations"><div class="container"><div class="kicker">CLEAR FROM THE FIRST CONVERSATION</div><h2>A consultation should create clarity—not pressure</h2><p class="lead">The complimentary 20-minute conversation is a focused triage discussion. It is not a sales obligation and no paid work begins without an agreed scope.</p><div class="ahqs-next-steps"><div class="ahqs-next-step"><span class="n">1</span><b>Your priority</b><span>Explain the accreditation, governance, risk, audit or laboratory-quality issue that needs attention.</span></div><div class="ahqs-next-step"><span class="n">2</span><b>Our initial view</b><span>We clarify the likely risk, the evidence to examine and whether independent support would add value.</span></div><div class="ahqs-next-step"><span class="n">3</span><b>Your choice</b><span>If further support makes sense, you receive a clear scope, timeline and professional fee for approval before work begins.</span></div></div></div></section>
 <section class="section soft"><div class="container faq"><div class="kicker">FREQUENT QUESTIONS</div><h2>Before you contact us</h2>
 <details><summary>Does AHQS provide accreditation or certification?</summary><p>No. AHQS provides independent quality-improvement and accreditation-readiness consulting. Accreditation and certification decisions remain with the applicable authorized organizations.</p></details>
 <details><summary>Can AHQS support laboratories virtually?</summary><p>Yes. Many coaching, document review, readiness, CAPA and quality-management activities can be performed virtually. On-site services can be discussed depending on scope and location.</p></details>
@@ -676,4 +676,6 @@ body{font-size:16px;line-height:1.68;text-rendering:optimizeLegibility;-webkit-f
 <script>
 if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})});}
 </script>
+<link rel="stylesheet" href="assets/ahqs-mobile.css?v=2">
+<script src="assets/ahqs-mobile.js?v=2" defer></script>
 </body></html>
