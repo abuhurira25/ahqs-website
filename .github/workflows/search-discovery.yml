@@ -1,0 +1,40 @@
+name: Search engine discovery
+
+on:
+  page_build:
+  workflow_dispatch:
+    inputs:
+      submit_all:
+        description: "Notify all canonical URLs (use for initial setup or a major site update)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: search-discovery
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    if: github.event_name == 'workflow_dispatch' || github.event.build.status == 'built'
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Check out the published revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.build.commit || github.sha }}
+          fetch-depth: 0
+      - name: Validate discovery metadata
+        run: python3 .github/scripts/search_discovery.py validate
+      - name: Notify IndexNow of published changes
+        env:
+          SUBMIT_ALL: ${{ inputs.submit_all }}
+        run: |
+          if [ "$SUBMIT_ALL" = "true" ]; then
+            python3 .github/scripts/search_discovery.py submit --all
+          else
+            python3 .github/scripts/search_discovery.py submit
+          fi
