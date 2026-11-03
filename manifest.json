@@ -17,8 +17,8 @@
   ],
   "shortcuts": [
     {"name": "Services", "short_name": "Services", "description": "View AHQS consulting services", "url": "/services.html"},
-    {"name": "Resources", "short_name": "Resources", "description": "Download free quality tools and templates", "url": "/products.html"},
-    {"name": "Readiness Hub", "short_name": "Readiness Hub", "description": "Access the AHQS Readiness Hub", "url": "/resources.html"},
+    {"name": "E-Shop", "short_name": "E-Shop", "description": "Browse and instantly download AHQS readiness toolkits and templates", "url": "/products.html"},
+    {"name": "Gap Assessment Radar", "short_name": "Radar", "description": "Take the free Readiness Pulse and explore accreditation readiness guides", "url": "/resources.html"},
     {"name": "Contact", "short_name": "Contact", "description": "Book a free consultation", "url": "/contact.html"}
   ]
 }

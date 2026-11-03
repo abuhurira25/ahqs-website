@@ -1,5 +1,5 @@
 // AHQS Healthcare Service Worker — offline cache for core pages and resources
-const CACHE_NAME = "ahqs-healthcare-v3";
+const CACHE_NAME = "ahqs-healthcare-v4";
 const OFFLINE_URL = "/offline.html";
 
 const CORE_ASSETS = [
